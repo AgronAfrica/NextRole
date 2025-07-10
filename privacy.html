@@ -12,93 +12,126 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
         
         .header {
             text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border-radius: 12px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         
         .header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             opacity: 0.9;
         }
         
         .content {
             background: white;
+            border-radius: 20px;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
         
-        .content h2 {
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
             color: #667eea;
-            margin: 30px 0 15px 0;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
         }
         
-        .content h3 {
+        .section h3 {
             color: #333;
-            margin: 20px 0 10px 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
         }
         
-        .content p {
+        .section p {
             margin-bottom: 15px;
-            color: #666;
+            text-align: justify;
         }
         
-        .content ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
+        .section ul {
+            margin: 15px 0;
+            padding-left: 30px;
         }
         
-        .content li {
+        .section li {
             margin-bottom: 8px;
-            color: #666;
+        }
+        
+        .highlight {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background: #5a6fd8;
         }
         
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 0.9rem;
+            color: white;
+            margin-top: 40px;
         }
         
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
             }
             
             .content {
                 padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -107,96 +140,170 @@
     <div class="container">
         <div class="header">
             <h1>Privacy Policy</h1>
-            <p>NextRole - Last updated: July 10, 2025</p>
+            <p>How we protect and use your information</p>
         </div>
         
         <div class="content">
-            <p>NextRole ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>NextRole ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services.</p>
+                
+                <p><strong>Last Updated:</strong> January 2025</p>
+                
+                <div class="highlight">
+                    <p><strong>Key Points:</strong></p>
+                    <ul>
+                        <li>We collect information you provide directly to us</li>
+                        <li>We use your information to provide and improve our services</li>
+                        <li>We do not sell your personal information to third parties</li>
+                        <li>You have control over your data and can request deletion</li>
+                        <li>We implement appropriate security measures to protect your information</li>
+                    </ul>
+                </div>
+            </div>
             
-            <h2>Information We Collect</h2>
+            <div class="section">
+                <h2>Information We Collect</h2>
+                
+                <h3>Personal Information</h3>
+                <p>We collect information you provide directly to us, including:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Name, email address, and profile information when you create an account</li>
+                    <li><strong>Resume Data:</strong> Professional experience, education, skills, and other information you include in your resumes</li>
+                    <li><strong>Job Applications:</strong> Company names, positions, application dates, and status updates you track</li>
+                    <li><strong>Cover Letters:</strong> Content and templates you create or customize</li>
+                    <li><strong>Payment Information:</strong> Subscription details and payment history (processed securely through Apple's App Store)</li>
+                </ul>
+                
+                <h3>Usage Information</h3>
+                <p>We automatically collect certain information about your use of the app, including:</p>
+                <ul>
+                    <li><strong>App Usage:</strong> Features you use, pages you visit, and time spent in the app</li>
+                    <li><strong>Device Information:</strong> Device type, operating system version, and app version</li>
+                    <li><strong>Performance Data:</strong> Crash reports and error logs to improve app stability</li>
+                    <li><strong>Analytics:</strong> Anonymous usage statistics to understand how users interact with our app</li>
+                </ul>
+                
+                <h3>AI and Machine Learning</h3>
+                <p>When you use our AI-powered features, we may process your input data to:</p>
+                <ul>
+                    <li>Generate personalized resumes and cover letters</li>
+                    <li>Provide job recommendations and career insights</li>
+                    <li>Improve our AI models and service quality</li>
+                </ul>
+            </div>
             
-            <h3>Personal Information</h3>
-            <p>We may collect the following personal information:</p>
-            <ul>
-                <li>Email address (when you create an account)</li>
-                <li>Name and contact information</li>
-                <li>Resume and cover letter content</li>
-                <li>Job application data</li>
-                <li>Usage data and preferences</li>
-            </ul>
+            <div class="section">
+                <h2>How We Use Your Information</h2>
+                
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li><strong>Provide Services:</strong> Create and manage your account, generate resumes and cover letters, track job applications</li>
+                    <li><strong>Improve Our App:</strong> Analyze usage patterns to enhance features and user experience</li>
+                    <li><strong>Personalize Content:</strong> Provide tailored job recommendations and career advice</li>
+                    <li><strong>Process Payments:</strong> Handle subscription payments and manage your subscription status</li>
+                    <li><strong>Communicate:</strong> Send important updates, security notifications, and customer support messages</li>
+                    <li><strong>Ensure Security:</strong> Detect and prevent fraud, abuse, and security threats</li>
+                </ul>
+            </div>
             
-            <h3>Device Information</h3>
-            <p>We may collect information about your device, including:</p>
-            <ul>
-                <li>Device type and operating system</li>
-                <li>App usage statistics</li>
-                <li>Crash reports and error logs</li>
-            </ul>
+            <div class="section">
+                <h2>Information Sharing and Disclosure</h2>
+                
+                <p>We do not sell, trade, or otherwise transfer your personal information to third parties, except in the following circumstances:</p>
+                
+                <h3>Service Providers</h3>
+                <p>We may share information with trusted third-party service providers who assist us in operating our app, including:</p>
+                <ul>
+                    <li><strong>Cloud Services:</strong> Firebase (Google) for data storage and authentication</li>
+                    <li><strong>Payment Processing:</strong> Apple's App Store for subscription payments</li>
+                    <li><strong>Analytics:</strong> Anonymous usage statistics to improve our services</li>
+                    <li><strong>AI Services:</strong> Secure processing of your input for AI-powered features</li>
+                </ul>
+                
+                <h3>Legal Requirements</h3>
+                <p>We may disclose your information if required by law or in response to valid legal requests, such as subpoenas or court orders.</p>
+                
+                <h3>Business Transfers</h3>
+                <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the business transaction.</p>
+            </div>
             
-            <h2>How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li>To provide and maintain our service</li>
-                <li>To process your subscription payments</li>
-                <li>To generate AI-powered resumes and cover letters</li>
-                <li>To improve our app functionality</li>
-                <li>To provide customer support</li>
-                <li>To send important updates and notifications</li>
-            </ul>
+            <div class="section">
+                <h2>Data Security</h2>
+                
+                <p>We implement appropriate technical and organizational security measures to protect your information, including:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> All data is encrypted in transit and at rest</li>
+                    <li><strong>Access Controls:</strong> Strict access controls and authentication requirements</li>
+                    <li><strong>Regular Audits:</strong> Security assessments and vulnerability testing</li>
+                    <li><strong>Data Backup:</strong> Secure backup and disaster recovery procedures</li>
+                </ul>
+                
+                <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+            </div>
             
-            <h2>Data Storage and Security</h2>
-            <p>Your data is stored securely using Firebase services. We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+            <div class="section">
+                <h2>Your Rights and Choices</h2>
+                
+                <h3>Access and Control</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of your personal information</li>
+                    <li><strong>Update:</strong> Correct or update your information through the app</li>
+                    <li><strong>Delete:</strong> Request deletion of your account and associated data</li>
+                    <li><strong>Export:</strong> Download your data in a portable format</li>
+                </ul>
+                
+                <h3>Opt-Out Options</h3>
+                <p>You can:</p>
+                <ul>
+                    <li>Disable push notifications in your device settings</li>
+                    <li>Limit app tracking permissions through your device settings</li>
+                    <li>Cancel your subscription at any time through the App Store</li>
+                </ul>
+                
+                <h3>Contact Us</h3>
+                <p>To exercise your rights or ask questions about your privacy, contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@nextrole.app">privacy@nextrole.app</a><br>
+                <strong>Support:</strong> <a href="mailto:support@nextrole.app">support@nextrole.app</a></p>
+            </div>
             
-            <h2>Data Sharing</h2>
-            <p>We do not sell, trade, or otherwise transfer your personal information to third parties, except:</p>
-            <ul>
-                <li>With your explicit consent</li>
-                <li>To comply with legal obligations</li>
-                <li>To protect our rights and safety</li>
-                <li>With service providers who assist in app functionality (Firebase, Apple)</li>
-            </ul>
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+            </div>
             
-            <h2>App Tracking Transparency</h2>
-            <p>Our app may request permission to track your activity across other companies' apps and websites. This tracking is used to:</p>
-            <ul>
-                <li>Provide personalized job recommendations</li>
-                <li>Improve app performance and user experience</li>
-                <li>Analyze app usage patterns</li>
-            </ul>
-            <p>You can control tracking permissions in your device settings at any time.</p>
+            <div class="section">
+                <h2>International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy.</p>
+            </div>
             
-            <h2>Subscription Information</h2>
-            <p>If you purchase a subscription:</p>
-            <ul>
-                <li>Payment information is processed securely by Apple</li>
-                <li>Subscriptions automatically renew unless cancelled</li>
-                <li>You can manage subscriptions in your Apple ID settings</li>
-            </ul>
+            <div class="section">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy in the app and updating the "Last Updated" date. Your continued use of the app after such changes constitutes acceptance of the updated policy.</p>
+            </div>
             
-            <h2>Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-                <li>Access your personal data</li>
-                <li>Correct inaccurate data</li>
-                <li>Delete your account and data</li>
-                <li>Opt out of tracking</li>
-                <li>Contact us with privacy concerns</li>
-            </ul>
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+                
+                <div class="highlight">
+                    <p><strong>NextRole</strong><br>
+                    Email: <a href="mailto:privacy@nextrole.app">privacy@nextrole.app</a><br>
+                    Support: <a href="mailto:support@nextrole.app">support@nextrole.app</a><br>
+                    Website: <a href="https://nextrole.app">nextrole.app</a></p>
+                </div>
+            </div>
             
-            <h2>Children's Privacy</h2>
-            <p>Our app is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
-            
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last updated" date.</p>
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p>Email: privacy@nextrole.app</p>
-            <p>Support: <a href="https://nextrole.app/support">https://nextrole.app/support</a></p>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="support.html" class="btn">Support</a>
+                <a href="terms.html" class="btn">Terms of Service</a>
+            </div>
         </div>
         
         <div class="footer">
             <p>&copy; 2025 NextRole. All rights reserved.</p>
+            <p><a href="support.html">Support</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </div>
 </body>
